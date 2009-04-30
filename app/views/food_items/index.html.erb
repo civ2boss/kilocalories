@@ -1,0 +1,24 @@
+<h1>Listing food_items</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Image url</th>
+  </tr>
+
+<% @food_items.each do |food_item| %>
+  <tr>
+    <td><%=h food_item.name %></td>
+    <td><%=h food_item.description %></td>
+    <td><%=h food_item.image_url %></td>
+    <td><%= link_to 'Show', food_item %></td>
+    <td><%= link_to 'Edit', edit_food_item_path(food_item) %></td>
+    <td><%= link_to 'Destroy', food_item, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New food_item', new_food_item_path %>

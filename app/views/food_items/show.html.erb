@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @food_item.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @food_item.description %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <%=h @food_item.image_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_food_item_path(@food_item) %> |
+<%= link_to 'Back', food_items_path %>

@@ -21,7 +21,7 @@ development:
   database: kilocalories_development
   pool: 5
   username: root
-  password: civ2boss
+  password:
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
